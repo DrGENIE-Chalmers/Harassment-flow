@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harassment Support — PhD @ Chalmers</title>
+  <style>
+    :root {
+      --ink: #2b1538;
+      --sub-ink: #5c4866;
+      --brand: #903090;
+      --brand-dk: #6b1f6b;
+      --brand-lt: #f0e0f0;
+      --brand-lilac: #d9bdde;
+      --accent: #0060a0;
+      --accent-lt: #d6e6f0;
+      --plum: #5c1f5c;
+      --bg: #fbf7f4;
+      --card: #ffffff;
+      --border: #e6d9e6;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    header {
+      background: var(--brand-lilac);
+      padding: 1.75rem 1.25rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid var(--accent);
+    }
+    header .inner {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      color: var(--brand-dk);
+      font-weight: 700;
+      margin: 0 0 0.35rem;
+    }
+    h1 {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 1.65rem;
+      color: var(--plum);
+      margin: 0 0 0.35rem;
+      line-height: 1.2;
+    }
+    .lede {
+      color: var(--sub-ink);
+      font-size: 0.95rem;
+      margin: 0.25rem 0 0;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+    h2 {
+      font-family: Georgia, serif;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin: 2rem 0 0.75rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h2:first-of-type { margin-top: 0.5rem; }
+    h2 .count {
+      font-family: -apple-system, system-ui, sans-serif;
+      font-size: 0.7rem;
+      color: var(--sub-ink);
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      float: right;
+    }
+
+    a.link {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.95rem 1rem;
+      margin: 0.5rem 0;
+      background: var(--card);
+      color: var(--ink);
+      text-decoration: none;
+      border-left: 4px solid var(--brand);
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+    a.link:hover, a.link:focus {
+      transform: translateY(-1px);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      outline: none;
+    }
+    a.link .arrow {
+      margin-left: auto;
+      color: var(--brand);
+      font-weight: 700;
+      flex-shrink: 0;
+      align-self: center;
+    }
+    a.link .title {
+      font-weight: 600;
+      color: var(--ink);
+      font-size: 0.98rem;
+      display: block;
+    }
+    a.link .desc {
+      font-size: 0.82rem;
+      color: var(--sub-ink);
+      margin-top: 0.2rem;
+      display: block;
+    }
+    a.link .text { flex: 1; min-width: 0; }
+
+    a.link.accent { border-left-color: var(--accent); }
+    a.link.accent .arrow { color: var(--accent); }
+
+    a.link.video {
+      background: var(--accent-lt);
+      border-left-color: var(--accent);
+    }
+    a.link.video .arrow { color: var(--accent); }
+    a.link.video .title { color: var(--accent); }
+
+    a.link.chatbot {
+      background: var(--brand-lt);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 10px;
+      background: var(--brand-lt);
+      color: var(--brand-dk);
+      font-weight: 600;
+      margin-left: 0.4rem;
+      vertical-align: 2px;
+      letter-spacing: 0.03em;
+    }
+    .badge.ext {
+      background: var(--accent-lt);
+      color: var(--accent);
+    }
+    .badge.featured {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--sub-ink);
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    footer .values {
+      color: var(--accent);
+      font-style: italic;
+      letter-spacing: 0.15em;
+      margin-top: 0.35rem;
+      font-size: 0.75rem;
+    }
+    footer .not-alone {
+      font-family: Georgia, serif;
+      font-style: italic;
+      color: var(--brand-dk);
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <p class="eyebrow">FOR PHD STUDENTS AT CHALMERS</p>
+      <h1>Harassment Support &amp; Resources</h1>
+      <p class="lede">You are not alone. Support is available at every step.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <h2>Reporting channels <span class="count">4 links</span></h2>
+
+    <a class="link" href="https://app.iasystemet.se/Authentication/LoginSSO/chalmers">
+      <span class="text">
+        <span class="title">IA system — Incident reporting</span>
+        <span class="desc">File a formal incident report. Log date/time, statements, witnesses.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link accent" href="https://pe3.se/chalmers-tekniska-hogskola-valjer-pe3-som-samarbetspartner/">
+      <span class="text">
+        <span class="title">PE3 — Healthcare service</span>
+        <span class="desc">Chalmers' occupational health partner. One anonymous therapy session available.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link accent" href="https://chalmersstudentkar.se/meet-your-new-counselor-traffa-nya-kuratorn/">
+      <span class="text">
+        <span class="title">Kurator — Student Counselor</span>
+        <span class="desc">Confidential advice and problem-solving support.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link" href="https://www.dokt.chs.chalmers.se/home">
+      <span class="text">
+        <span class="title">DOMB — Doctoral Student Ombudsperson</span>
+        <span class="desc">Independent support role for PhD students. Employed by the student union.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <h2>Online resources <span class="count">8 links</span></h2>
+
+    <a class="link chatbot" href="https://chat.portal.chalmers.se/">
+      <span class="text">
+        <span class="title">Chalmers chat portal<span class="badge featured">live</span></span>
+        <span class="desc">Live support entry point — talk to someone now.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link" href="https://intranet.chalmers.se/en/working-at-chalmers/health-safety-environment/work-environment-and-equality/victimisation-harassment-and-sexual-harassment/">
+      <span class="text">
+        <span class="title">Chalmers Victimization and Harassment<span class="badge">intranet</span></span>
+        <span class="desc">Official Chalmers guidance on victimization, harassment, and sexual harassment.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link" href="https://www.chalmers.se/utbildning/dina-studier/studie-och-arbetsmiljo/trygg-pa-chalmers/">
+      <span class="text">
+        <span class="title">Trygg på Chalmers</span>
+        <span class="desc">Safe at Chalmers — student work environment resources.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link" href="https://intranet.chalmers.se/en/working-at-chalmers/my-employment/health-ergonomics/occupational-health-service/">
+      <span class="text">
+        <span class="title">Chalmers occupational health services<span class="badge">intranet</span></span>
+        <span class="desc">Health, ergonomics, and workplace wellbeing services.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link" href="https://hbr.org/2022/05/recognizing-and-responding-to-microaggressions-at-work">
+      <span class="text">
+        <span class="title">Recognizing microaggressions<span class="badge ext">HBR</span></span>
+        <span class="desc">Harvard Business Review guide to spotting and responding to microaggressions.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link" href="https://staff.ki.se/our-ki/equal-opportunities-at-ki/master-suppression-techniques">
+      <span class="text">
+        <span class="title">Master suppression techniques<span class="badge ext">KI</span></span>
+        <span class="desc">Karolinska Institutet guide to identifying suppression tactics.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link" href="https://righttobe.org/guides/bystander-intervention-training/">
+      <span class="text">
+        <span class="title">Bystander intervention training<span class="badge ext">Right To Be</span></span>
+        <span class="desc">What to do when you see harassment — the 5 Ds framework.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link" href="https://www3.ohrc.on.ca/en/policy-preventing-sexual-and-gender-based-harassment/2-identifying-sexual-harassment">
+      <span class="text">
+        <span class="title">Identifying sexual harassment<span class="badge ext">OHRC</span></span>
+        <span class="desc">Ontario Human Rights Commission policy on recognizing sexual harassment.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <h2>Video <span class="count">1 link</span></h2>
+
+    <a class="link video" href="https://play.chalmers.se/media/Information+about+Chalmers%E2%80%99+procedure+for+handling+victimization%2C+harassment%2C+and+sexual+harassment/0_4l3mmb1a">
+      <span class="text">
+        <span class="title">▶ Chalmers procedure video</span>
+        <span class="desc">Official Chalmers walkthrough of the harassment handling procedure.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <footer>
+      <div class="not-alone">You are not alone.</div>
+      DrGENIE @ Chalmers
+      <div class="values">RESPECT &middot; EMPATHY &middot; COMMITMENT</div>
+    </footer>
+
+  </main>
+</body>
+</html>
