@@ -158,22 +158,52 @@
       color: #fff;
     }
 
-    a.poster-dl {
-      display: block;
+    .poster-box {
       max-width: 640px;
-      margin: -0.5rem auto 0;
-      padding: 0.7rem 1.25rem;
-      text-align: center;
-      font-weight: 700;
-      font-size: 0.92rem;
-      color: #fff;
+      margin: 1rem auto 0;
+      padding: 1.1rem 1.25rem 1.25rem;
       background: var(--brand);
-      text-decoration: none;
-      border-radius: 0 0 8px 8px;
-      letter-spacing: 0.02em;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(107,31,107,0.35);
     }
-    a.poster-dl:hover, a.poster-dl:focus { background: var(--brand-dk); outline: none; }
-
+    .poster-box .pb-title {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin: 0 0 0.25rem;
+    }
+    .poster-box .pb-sub {
+      color: var(--brand-lt);
+      font-size: 0.8rem;
+      margin: 0 0 0.8rem;
+    }
+    .poster-box .pb-btns {
+      display: flex;
+      gap: 0.6rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .poster-box a.pb-btn {
+      display: inline-block;
+      padding: 0.6rem 1.4rem;
+      background: #fff;
+      color: var(--brand-dk);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border-radius: 999px;
+      border: 2px solid #fff;
+    }
+    .poster-box a.pb-btn.ghost {
+      background: transparent;
+      color: #fff;
+    }
+    .poster-box a.pb-btn:hover, .poster-box a.pb-btn:focus {
+      background: var(--brand-lt);
+      color: var(--brand-dk);
+      outline: none;
+    }
     footer {
       margin-top: 3rem;
       text-align: center;
@@ -207,29 +237,16 @@
     </div>
   </header>
 
-  <a class="poster-dl" href="first-aid-kit-poster.pdf" download>⬇ Download the first-aid kit poster</a>
+  <div class="poster-box">
+    <p class="pb-title">📄 First-aid kit poster</p>
+    <p class="pb-sub">The one-page guide: what counts as unwanted behaviour, the four levels of escalation, and where to get support.</p>
+    <div class="pb-btns">
+      <a class="pb-btn" href="first-aid-kit-poster.pdf" download>⬇ Download PDF</a>
+      <a class="pb-btn ghost" href="first-aid-kit-poster.png" download>⬇ Download PNG</a>
+    </div>
+  </div>
 
   <main>
-
-    <h2>PhD Ecosystem <span class="count">1 link</span></h2>
-
-    <a class="link chatbot" href="https://drgenie-chalmers.github.io/phd-ecosystem/main.html">
-      <span class="text">
-        <span class="title">PhD Ecosystem<span class="badge featured">DrGENIE</span></span>
-        <span class="desc">Interactive map of the PhD ecosystem at Chalmers — roles, support, and who to turn to.</span>
-      </span>
-      <span class="arrow">→</span>
-    </a>
-
-    <h2>Reporting support <span class="count">1 link</span></h2>
-
-    <a class="link" href="https://app.iasystemet.se/Authentication/LoginSSO/chalmers">
-      <span class="text">
-        <span class="title">IA system — Incident reporting</span>
-        <span class="desc">File a formal incident report. Log date/time, statements, witnesses.</span>
-      </span>
-      <span class="arrow">→</span>
-    </a>
 
     <h2>Support channels <span class="count">4 links</span></h2>
 
@@ -261,6 +278,26 @@
       <span class="text">
         <span class="title">Chalmers occupational health services<span class="badge">intranet</span></span>
         <span class="desc">Health, ergonomics, and workplace wellbeing services.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <h2>PhD Ecosystem <span class="count">1 link</span></h2>
+
+    <a class="link chatbot" href="https://drgenie-chalmers.github.io/phd-ecosystem/main.html">
+      <span class="text">
+        <span class="title">PhD Ecosystem<span class="badge featured">DrGENIE</span></span>
+        <span class="desc">Interactive map of the PhD ecosystem at Chalmers — roles, support, and who to turn to.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <h2>Reporting support <span class="count">1 link</span></h2>
+
+    <a class="link" href="https://app.iasystemet.se/Authentication/LoginSSO/chalmers">
+      <span class="text">
+        <span class="title">IA system — Incident reporting</span>
+        <span class="desc">File a formal incident report. Log date/time, statements, witnesses.</span>
       </span>
       <span class="arrow">→</span>
     </a>
