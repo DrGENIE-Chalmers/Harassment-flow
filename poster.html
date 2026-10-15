@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>First-aid Kit Poster — PhD @ Chalmers</title>
+  <style>
+    :root { --brand:#903090; --brand-dk:#6b1f6b; --brand-lt:#f0e0f0; --bg:#fbf7f4; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background: var(--bg); }
+    .bar {
+      position: sticky; top: 0;
+      display: flex; gap: 0.6rem; align-items: center; justify-content: center; flex-wrap: wrap;
+      padding: 0.6rem 1rem;
+      background: var(--brand);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .bar a {
+      display: inline-block; padding: 0.4rem 1.1rem;
+      background: #fff; color: var(--brand-dk);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      font-weight: 700; font-size: 0.85rem; text-decoration: none; border-radius: 999px;
+    }
+    .bar a.ghost { background: transparent; color: #fff; border: 2px solid #fff; }
+    .bar a:hover, .bar a:focus { background: var(--brand-lt); color: var(--brand-dk); outline: none; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 1rem; }
+    img.poster {
+      display: block; width: 100%; height: auto;
+      border-radius: 6px; box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <a class="ghost" href="index.html">← Back to resources</a>
+    <a href="first-aid-kit-poster.pdf" download>⬇ Download PDF</a>
+    <a href="first-aid-kit-poster.png" download>⬇ Download PNG</a>
+  </div>
+  <div class="wrap">
+    <img class="poster" src="first-aid-kit-poster.png" alt="First-aid kit poster: Experiencing Unwanted Behaviour? For PhD students at Chalmers — four levels of escalation (Communicate, Report, Seek support, External options) and support contacts (PE3, Kurator, DrGENIE Reps), with QR code to Chalmers PhD resources.">
+  </div>
+</body>
+</html>
